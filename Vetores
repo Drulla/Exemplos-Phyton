@@ -1,0 +1,14 @@
+
+#Exemplificando vetores em python
+numeros = list()
+
+tamanho = int(input("Digite o tamanho do vetor: "))
+for i in range(tamanho):
+    valor = (input(f"Digite um numero do vetro na posição {i}: "))
+    numeros.append(valor)
+
+#chamando os vetores armzenados
+print("Vetor:", numeros)
+
+#para impirmir na posição desejada
+print("Posição 1", numeros[1])
