@@ -1,0 +1,76 @@
+class No():
+    def __init__(self, val):
+        self.val = val
+        self.prox = None
+class Conjunto():
+    
+    def __init__(self):
+        self.cabeca = None
+        self.tamanho = 0
+    
+    def remover(self, i):
+        if(self.cabeca != None and self.cabeca.prox != None):
+            aux = self.cabeca
+            
+            valor = aux.val
+            self.cabeca = aux.prox
+            self.tamanho -=1
+            return valor
+        elif(self.cabeca != None):
+            valor = self.cabeca.val
+            self.cabeca = None
+            self.tamanho -=1
+            return valor
+        else:
+            return None
+    
+    def inserir(self, valor):
+        if(self.cabeca == None):
+            self.cabeca = No(valor)
+            self.tamanho+=1
+        else:
+            if(self.cabeca.val == valor):
+                return
+                    
+            aux = self.cabeca
+            
+            while(aux.prox != None):
+                if(aux.prox.val == valor):
+                    return
+                    
+                aux = aux.prox
+                
+            aux.prox = No(valor)
+            self.tamanho+=1
+    
+    def exibir(self):
+        aux = self.cabeca
+        
+        while(aux != None):
+            print(aux.val)
+            aux = aux.prox
+    
+    def get_tamanho(self):
+        return self.tamanho
+def processa_conjuto():
+	  
+    t = int(input())
+    pair_left = []
+    pair_right = []
+    
+    for i in range(0,t):
+        nomes = input().split(' ')
+        pair_left.insert(i,nomes[0])
+        pair_right.insert(i,nomes[1])
+    conjunto = Conjunto()
+    for i in range(0,t):
+        conjunto.inserir(pair_left[i] + "-" + pair_right[i])
+        print(conjunto.get_tamanho())
+        
+if __name__ == "__main__":
+    
+    filtro = {k: v for k, v in vars().copy().items() if not re.search(r'\b__\w+__\b', k) }
+    if not "Conjunto" in filtro:
+        print("É necessário declarar uma classe Conjunto")
+  
+    processa_conjuto()
