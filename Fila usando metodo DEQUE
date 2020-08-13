@@ -1,0 +1,12 @@
+from collections import deque #cria uma fila, esse deque traz ja a ordenação para tirar o primeiro
+
+minha_fila = deque(["Matheus","Gustavo","Julianne"])
+print(minha_fila)
+
+#removendo
+minha_fila.popleft()
+print(minha_fila)
+
+#inserindo
+minha_fila.append("Maria")
+print(minha_fila)
