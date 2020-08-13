@@ -1,0 +1,8 @@
+meu_dicionario = {1:'Matheus', 2:'Joao',3:'Carla'}
+
+print(meu_dicionario)
+print(meu_dicionario[1])
+print(meu_dicionario[3])
+
+for id, nome in meu_dicionario.items():
+    print(f"O id é {id} e o nome contido é {nome}")
