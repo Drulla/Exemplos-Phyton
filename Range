@@ -1,0 +1,16 @@
+#Declarando um range
+range_1 =range(5)#determina ponto de parada ex 0 - 5
+range_2 = range(2,10)
+range_3 = range(2,10 , 2 )# determina inicio e final, de ponto em ponto
+
+for i in range_1:
+    print("Primeiro")
+    print(i)
+
+for i in range_2:
+    print("Segundo")
+    print(i)
+
+for i in range_3:
+    print("Terceiro")
+    print(i)
