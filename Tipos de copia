@@ -1,0 +1,40 @@
+#Tipos de listas
+lista_simples_inteiro =[1, 2, 3, 4, 5]
+lista_simples_string = ["Ola", "Mundo"]
+lista_simples_mesclada = [1,2,3,"Ola Senhores", True, 1.5]
+nested_list = [[1,2,3],["Matheus","Tudo bem?"]]## comporta diversas listas em uma lista
+
+# impressão dos elementos
+print(lista_simples_mesclada)
+print(nested_list)
+
+#Len() - responsavel por retornar tamanho de uma lista
+print(len(lista_simples_mesclada))
+
+#Append() - insere elementos no final da lista, - apenas um elemento
+lista_simples_inteiro.append(6)
+print(lista_simples_inteiro)
+
+# insert() - insere um elemento em uma determinada posição
+lista_simples_inteiro.insert(2,"Teste")
+print(lista_simples_inteiro)
+
+#remove()  - remove um elemento
+lista_simples_inteiro.remove(5)
+print(lista_simples_inteiro)
+
+#index() - retorna a posição de um elemento em uma lista
+index = lista_simples_inteiro.index(3)
+print(index)
+
+#count() -retorna quantidade de elementos em uma lista
+count = lista_simples_inteiro.count(3)
+print(count)
+
+#sort() - responsavel por organizar os elementos de uma lista, ordenar
+lista_simples_inteiro.remove("Teste")
+lista_simples_inteiro.sort(reverse=False) #do menor pro maior
+print(lista_simples_inteiro)
+
+lista_simples_inteiro.sort(reverse=True)# maior pro menor
+print(lista_simples_inteiro)
