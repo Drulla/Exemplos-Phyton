@@ -1,0 +1,11 @@
+lista_simples_inteiro =[1, 2, 3, 4, 5,6,7,9,8,25,7,9]
+
+print(lista_simples_inteiro[5:9])# retorna o elemento a partir de um indice
+print(lista_simples_inteiro[3:])# indice do elemento que ira iniciar, sem determinar a parada
+print(lista_simples_inteiro[:5])#inicio da lista ate elemento do indice desejado
+nova_lista = lista_simples_inteiro[:3]
+print(nova_lista)
+
+intervalo = slice(1,4)# cria um intervalo fixo
+print("Metodo slice")
+print(lista_simples_inteiro[intervalo])
