@@ -1,0 +1,11 @@
+minha_tupla = (1,2,3,"Ola","Matheus",1.5)
+print(type(minha_tupla))
+
+#count() conta a quantidade da tupla
+print(minha_tupla.count(1))
+
+# index() - verifica posição do elemento na tupla
+print(minha_tupla.index(3))
+
+# verificar a existencia de uma elemento na tupla
+print(2 in minha_tupla)
