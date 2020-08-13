@@ -1,0 +1,24 @@
+meu_dicionario = {1:'Matheus', 2:'Joao',3:'Carla'}
+meu_dicionario_2 = {1:'Matheus', 2:'Joao',3:'Carla'}
+#get - passa a chave que quer retornar o valor
+print(meu_dicionario.get(2))
+
+#len() - retorna tamanha da estrutura
+print(len(meu_dicionario))
+
+#pop() - remove elemento
+print(meu_dicionario.pop(3))
+print(meu_dicionario)
+
+#clear() - zera os valores e chaves
+meu_dicionario.clear()
+print(meu_dicionario)
+
+#keys - retorna todas as chaves de um dicionario
+print(meu_dicionario_2.keys())
+
+#Adicionando elementos
+meu_dicionario_2[4] = 'Gustavo'
+print(meu_dicionario_2)
+meu_dicionario[1] = 'Teste'
+print(meu_dicionario)
